@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos2</title>
+</head>
+<body>
+    <h1>Formulario De Contactos</h1>
+    <form action="">
+        <!--Entrada del Nombre-->
+        <label for="txtNombre">Nombre: </label>
+        <input type="text" name="txtNombre" id="txtNombre" placeholder="Introduce el Nombre">
+        <br>
+        <!--Entrada de Carrera-->>
+        <label for="txtCarrera">Carrera: </label>
+        <input type="text" name="txtCarrera" id="txtCarrera" placeholder="Introduce la Carrera">
+        <br>
+        <!--Entrada del Semestre-->
+        <label for="txtSemestre">Semestre</label>
+        <input type="number" min="1" max="12" value="6" name="txtSemestre" id="txtSemestre"> 
+        <br>
+        <!--Entrada del Genero-->>
+        <p>Elige el Genero</p><br>
+        <p>
+            <input type="radio" name="rdbGenero" id="rdbMasculino" value="Masculino">Masculino
+        </p>
+        
+        <p>
+            <input type="radio" name="rdbGenero" id="rdbFemenino" value="Femenino">Femenino
+        </p>
+        
+        <p>
+            <input type="radio" name="rdbGenero" id="rdbOtro" value="Otro" checked>Otro
+        </p>
+        <!--Entrada de Edad-->
+        <p>Selecciona tu rango de edad:</p>
+            <select name="sldEdad" id="sldEdad">
+                <option value="18">18 años</option>
+                <option value="19">19 años</option>
+                <option value="20" selected>20 años</option>
+                <option value="21">21 años</option>
+                <option value="22">22 años</option>
+                <option value="23">23 años</option>
+                <option value="24">24 años</option>
+            </select>
+        <hr>
+            <label for="chkGuardarDatos">Recordar informacion</label>
+            <input type="checkbox" name="chkGuardarDatos" id="chkGuardarDatos" checked>
+
+        <hr>
+        <input type="submit" value="Enviar">
+        
+
+
+    </form>
+
+    <table style="width: 100%;border:red dashed 2px">
+        <tr>
+            <td>Numero de Control</td>
+            <td>Nombre del Alumno</td>
+            <td>Carrera</td>
+        </tr>
+        <tr>
+            <td>celda 2,1</td>
+            <td>celda 2,2</td>
+            <td>celda 2,3</td>
+        </tr>
+        <tr>
+            <td>celda 3,1</td>
+            <td>celda 3,2</td>
+            <td>celda 3,3</td>
+        </tr>
+    </table>
+    <hr>
+<table border="2" style="width: 100%;">
+    <tr>
+        <th>Numero de Control</th>
+        <th colspan="2">Nombre del Alumno</th>
+        <th>Carrera</th> 
+    </tr>
+    <tr>
+        <td rowspan="2">18420076</td>
+        <td>Alejandro Alfaro Madrigal</td> 
+        <td rowspan="2">apellidos</td>
+        <td rowspan="2">Informatica</td> 
+    </tr>
+    <tr>
+        <td>celda 3,1</td>
+        
+        
+    </tr>
+</table>
+<br>
+
+<table border="2" style="width: 100%;">
+    <tr>
+        <th>Nombre</th>
+        <th>Carrera</th>
+        <th>Semestre</th> 
+        <th>Genero</th> 
+        <th>Edad</th> 
+    </tr>
+    <tr>
+        <td rowspan="2"> <!--Entrada del Nombre-->
+            <label for="txtNombre"></label>
+            <input type="text" name="txtNombre" id="txtNombre" placeholder="Introduce el Nombre"></td>
+        
+        <td rowspan="2"><!--Entrada de Carrera-->>
+            <label for="txtCarrera"></label>
+            <input type="text" name="txtCarrera" id="txtCarrera" placeholder="Introduce la Carrera"></td>
+        <td rowspan="2"><!--Entrada del Semestre-->
+            <label for="txtSemestre"></label>
+            <input type="number" min="1" max="12" value="6" name="txtSemestre" id="txtSemestre"></td> 
+        <td rowspan="2"><!--Entrada del Genero-->>
+            <p>Elige el Genero</p><br>
+            <p>
+                <input type="radio" name="rdbGenero" id="rdbMasculino" value="Masculino">Masculino
+            </p>
+            
+            <p>
+                <input type="radio" name="rdbGenero" id="rdbFemenino" value="Femenino">Femenino
+            </p>
+            
+            <p>
+                <input type="radio" name="rdbGenero" id="rdbOtro" value="Otro" checked>Otro
+            </p></td> 
+        <td rowspan="2"> <!--Entrada de Edad-->
+            <p>Selecciona tu rango de edad:</p>
+                <select name="sldEdad" id="sldEdad">
+                    <option value="18">18 años</option>
+                    <option value="19">19 años</option>
+                    <option value="20" selected>20 años</option>
+                    <option value="21">21 años</option>
+                    <option value="22">22 años</option>
+                    <option value="23">23 años</option>
+                    <option value="24">24 años</option>
+                </select></td> 
+        
+    </tr>
+    
+    
+</table>
+<hr>
+            <label for="chkGuardarDatos">Recordar informacion</label>
+            <input type="checkbox" name="chkGuardarDatos" id="chkGuardarDatos" checked>
+
+        <hr>
+        <input type="submit" value="Enviar">
+    <br>
+<table>
+    <thead>
+        <tr>theah</tr> <br>
+        
+        <tr>tbody</tr><br>
+        
+        <tr>tfoot</tr>
+    </thead>
+    <tbody>
+        <td>El elemento thead contiene a un bloque de filas ( tr ) que representa a la sección de encabezado de una tabla ( table ),
+             donde las celdas de encabezado ( th ) son encontradas habitualemnte. 
+             Este elemento puede ser útil para especificar qué filas proveen información de encabezado para el resto de la tabla.</td>
+<br>
+        <td>El elemento tbody contiene a un bloque de filas ( tr ) que representaa a la sección del cuerpo de una tabla ( table ). Este elemento puede ser útil para especificar qué filas proveen información de contenido en la tabla, 
+        en contraste con aquellas que son parte del encabezado ( header ) o el pie ( footer ).</td>     
+    </tbody>
+    
+    <tfoot>
+        <td>El elemento tfoot contiene a un bloque de filas ( tr ) que representa a la sección de pie de una tabla ( table ). 
+            Este elemento puede ser útil para insertar celdas que provean, entre otros, 
+            resúmenes o valores promedio para la información de cada columna.</td>
+    </tfoot>
+</table>
+
+    
+
+</body>
+</html>
